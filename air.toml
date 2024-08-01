@@ -1,0 +1,20 @@
+# Config file for air - Live reload for Go applications
+
+[build]
+# Command to build your project
+cmd = "go build -o ./tmp/main"
+
+# Build output binary filename
+bin = "tmp/main"
+
+# Delve debugger command
+delve = true
+
+# Watch these folders for changes
+include_ext = ["go", "tmpl", "html"]
+
+# Exclude these folders from watching
+exclude_dir = ["vendor"]
+
+# Set to true to disable log file
+log_file = false
