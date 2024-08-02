@@ -2,7 +2,7 @@ repos:
   - repo: local
     hooks:
       - id: go-unittest
-        name: Run Race Tests
+        name: go run test
         entry: make test
         language: system
         types: [go]
@@ -32,3 +32,4 @@ repos:
     hooks:
       - id: commitlint
         stages: [commit-msg]
+        additional_dependencies: ['@commitlint/config-conventional']
