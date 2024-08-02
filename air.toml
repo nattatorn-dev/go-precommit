@@ -17,4 +17,4 @@ include_ext = ["go", "tmpl", "html"]
 exclude_dir = ["vendor"]
 
 # Set to true to disable log file
-log_file = true
+log_file = false
