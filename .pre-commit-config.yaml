@@ -1,9 +1,9 @@
 repos:
   - repo: local
     hooks:
-      - id: go-race-test
+      - id: go-unittest
         name: Run Race Tests
-        entry: make race
+        entry: make test
         language: system
         types: [go]
 
